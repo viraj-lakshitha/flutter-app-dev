@@ -14,20 +14,24 @@ class Home extends StatelessWidget { // Enable Hot-Reload
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      body: Container(
-        padding: EdgeInsets.all(20.0),
-        // padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-        // padding: EdgeInsets.fromLTRB(10.0,20.0,30.0,40.0), // Inside Container
-        margin: EdgeInsets.all(20.0), // Around Container
-        color: Colors.green[400],
-        child: Text('Hello World !'),
+      body: Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceAround, // horizontal
+        crossAxisAlignment: CrossAxisAlignment.center, // vertically
+        children: <Widget>[
+          Text('Hello World'),
+          FlatButton(
+            onPressed: () {},
+            child: Text('Click'),
+            color: Colors.green,
+          ),
+          Container(
+            color: Colors.green[100],
+            padding: EdgeInsets.all(30.0),
+            child: Text('Inside Container'),
+          ),
+        ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () { print('Button Clicked !'); },
-        child: Text('Click'),
-        backgroundColor: Colors.green,
-      ),
-    );
+      );
   }
 }
 
