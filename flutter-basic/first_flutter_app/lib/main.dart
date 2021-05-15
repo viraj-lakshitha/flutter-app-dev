@@ -14,25 +14,33 @@ class Home extends StatelessWidget { // Enable Hot-Reload
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center, // horizontal
-        crossAxisAlignment: CrossAxisAlignment.center, // vertical
+      body: Row(
         children: <Widget> [
-          Container(
-            padding: EdgeInsets.all(10.0),
-            color: Colors.green,
-            child: Text('Container 1'),
+          // Split row into 6 portion and 1st container get 3, 2nd get 2 and 3rd get 1
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.red,
-            child: Text('Container 2'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.blue,
-            child: Text('Container 3'),
-          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
+          )
         ],
       ),
       );
