@@ -14,29 +14,13 @@ class Home extends StatelessWidget { // Enable Hot-Reload
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      body: Center(
-        // child: Icon(
-        //   Icons.airport_shuttle,
-        //   color: Colors.green,
-        //   size: 50.0,
-        // ),
-        
-        // child: FlatButton(
-        //   onPressed: () { print('Button Pressed'); },
-        //   child: Text('Click'),
-        //   color: Colors.red,
-        // )
-        
-        child: RaisedButton.icon(
-            onPressed: () {
-              print('Clicked');
-            },
-            icon: Icon(
-              Icons.mail
-            ),
-            label: Text('Click !'),
-            color: Colors.red,
-        ),
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        // padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+        // padding: EdgeInsets.fromLTRB(10.0,20.0,30.0,40.0), // Inside Container
+        margin: EdgeInsets.all(20.0), // Around Container
+        color: Colors.green[400],
+        child: Text('Hello World !'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () { print('Button Clicked !'); },
