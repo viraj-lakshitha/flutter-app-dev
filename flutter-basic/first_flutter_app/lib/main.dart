@@ -15,10 +15,27 @@ class Home extends StatelessWidget { // Enable Hot-Reload
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Icon(
-          Icons.airport_shuttle,
-          color: Colors.green,
-          size: 50.0,
+        // child: Icon(
+        //   Icons.airport_shuttle,
+        //   color: Colors.green,
+        //   size: 50.0,
+        // ),
+        
+        // child: FlatButton(
+        //   onPressed: () { print('Button Pressed'); },
+        //   child: Text('Click'),
+        //   color: Colors.red,
+        // )
+        
+        child: RaisedButton.icon(
+            onPressed: () {
+              print('Clicked');
+            },
+            icon: Icon(
+              Icons.mail
+            ),
+            label: Text('Click !'),
+            color: Colors.red,
         ),
       ),
       floatingActionButton: FloatingActionButton(
