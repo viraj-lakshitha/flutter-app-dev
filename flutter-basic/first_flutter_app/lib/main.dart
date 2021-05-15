@@ -15,12 +15,11 @@ class Home extends StatelessWidget { // Enable Hot-Reload
         backgroundColor: Colors.green,
       ),
       body: Center(
-        // child: Image(
-        //   // image: NetworkImage('https://www.photoshopessentials.com/newsite/wp-content/uploads/2018/08/resize-images-print-photoshop-f.jpg'),
-        //   image: AssetImage('./assets/image-2.jpg') // update pubspec.yaml file
-        //
-        // ),
-        child: Image.asset('assets/image-1.jpg'),
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.green,
+          size: 50.0,
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () { print('Button Clicked !'); },
