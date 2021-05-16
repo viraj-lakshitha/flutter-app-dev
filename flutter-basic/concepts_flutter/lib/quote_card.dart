@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class QuoteCard extends StatelessWidget {
 
-  Quote quote;
-  QuoteCard(this.quote);
+  final Quote quote;
+  final Function delete;
+  QuoteCard({required this.quote, required this.delete});
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +32,12 @@ class QuoteCard extends StatelessWidget {
                   color: Colors.grey[800]
               ),
             ),
+            SizedBox(height: 8.0,),
+            FlatButton.icon(
+              label: Text('Delete'),
+              icon: Icon(Icons.delete),
+              onPressed: () => this.delete.call(),
+            )
           ],
         ),
       ),
