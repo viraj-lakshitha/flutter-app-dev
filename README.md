@@ -12,3 +12,7 @@ Flutter is an open-source UI software development kit created by Google. It is u
 #### POC Project Preview
 1. vitiya_id - Simple Application
 ![vitiya_id_preview](./poc-projects/app-preview-vitiya_id.png)
+
+2. world_time - Current Time Mobile Application
+![world_time_app](./poc-projects/time-app.png)
+Some erorrs may occured due to high usage of World Time Public API
